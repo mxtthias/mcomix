@@ -124,7 +124,7 @@ class MainUI(gtk.UIManager):
             ('slideshow', gtk.STOCK_MEDIA_PLAY, _('Start _slideshow'),
                 '<Control>S', _('Start slideshow'), window.slideshow.toggle),
             ('lens', 'mcomix-lens', _('Magnifying _lens'),
-                'l', _('Magnifying lens'), window.lens.toggle),
+                '<Shift>l', _('Magnifying lens'), window.lens.toggle),
             ('stretch', None, _('Stretch small images'), 'y',
                 _('Stretch images to fit to the screen, depending on zoom mode.'),
                 window.change_stretch)])
@@ -137,7 +137,7 @@ class MainUI(gtk.UIManager):
             ('fit_width_mode', 'mcomix-fitwidth', _('Fit _width mode'),
                 'w', _('Fit width mode'), constants.ZOOM_MODE_WIDTH),
             ('fit_height_mode', 'mcomix-fitheight', _('Fit _height mode'),
-                'h', _('Fit height mode'), constants.ZOOM_MODE_HEIGHT),
+                '<Shift>h', _('Fit height mode'), constants.ZOOM_MODE_HEIGHT),
             ('fit_manual_mode', 'mcomix-fitmanual', _('M_anual zoom mode'),
                 'a', _('Manual zoom mode'), constants.ZOOM_MODE_MANUAL)],
             3, window.change_zoom_mode)

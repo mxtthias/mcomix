@@ -115,16 +115,16 @@ class EventHandler:
 
         # Arrow keys scroll the image
         manager.register('scroll down',
-            ['Down', 'KP_Down'],
+            ['Down', 'KP_Down', 'j'],
             self._scroll_down)
         manager.register('scroll up',
-            ['Up', 'KP_Up'],
+            ['Up', 'KP_Up', 'k'],
             self._scroll_up)
         manager.register('scroll right',
-            ['Right', 'KP_Right'],
+            ['Right', 'KP_Right', 'l'],
             self._scroll_right)
         manager.register('scroll left',
-            ['Left', 'KP_Left'],
+            ['Left', 'KP_Left', 'h'],
             self._scroll_left)
 
         # Space key scrolls down a percentage of the window height or the
